@@ -75,6 +75,7 @@ const translations = {
     en: {
         "nav.home": "Home",
         "nav.about": "About Us",
+        "nav.schedule": "Schedule",
         "nav.services": "Services",
         "nav.doctors": "Doctors",
         "nav.contact": "Contact",
@@ -137,6 +138,7 @@ const translations = {
     hi: {
         "nav.home": "होम",
         "nav.about": "हमारे बारे में",
+        "nav.schedule": "समय सारणी",
         "nav.services": "सेवाएं",
         "nav.doctors": "डॉक्टर",
         "nav.contact": "संपर्क करें",
@@ -199,6 +201,7 @@ const translations = {
     bn: {
         "nav.home": "হোম",
         "nav.about": "আমাদের সম্পর্কে",
+        "nav.schedule": "সময়সূচী",
         "nav.services": "সেবা",
         "nav.doctors": "ডাক্তার",
         "nav.contact": "যোগাযোগ",
