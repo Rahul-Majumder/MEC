@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathabhanga Eye Care Centre</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="MECLogo.png" alt="Mathabhanga Eye Care Logo">
+                <h1>Mathabhanga <span>Eye Care</span></h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#about" data-i18n="nav.about">About Us</a></li>
+                    <li><a href="#schedule" data-i18n="nav.schedule">Schedule</a></li>
+                    <li><a href="#services" data-i18n="nav.services">Services</a></li>
+                    <li><a href="#doctors" data-i18n="nav.doctors">Doctors</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-right">
+                <div class="language-selector">
+                    <button class="language-btn active" data-lang="en">EN</button>
+                    <button class="language-btn" data-lang="hi">हिं</button>
+                    <button class="language-btn" data-lang="bn">বাং</button>
+                </div>
+                <a href="https://mathabhanga.elihealthsupport.com/" class="desktop-book-btn" target="_blank" data-i18n="nav.book">Book Appointment</a>
+            </div>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Hero Banner Slider -->
+    <section class="hero-banner" id="home">
+        <div class="banner-slide active" style="background-image: url('https://via.placeholder.com/1200x400?text=Mathabhanga+Eye+Care');">
+            <div class="banner-content">
+                <h2 data-i18n="banner.title1">Advanced Eye Care Solutions</h2>
+                <p data-i18n="banner.text1">Comprehensive eye care services with state-of-the-art technology and experienced specialists.</p>
+            </div>
+        </div>
+        <div class="banner-slide" style="background-image: url('https://via.placeholder.com/1200x400?text=Expert+Ophthalmologists');">
+            <div class="banner-content">
+                <h2 data-i18n="banner.title2">Expert Ophthalmologists</h2>
+                <p data-i18n="banner.text2">Our team of highly qualified doctors provide personalized care for all your eye health needs.</p>
+            </div>
+        </div>
+        <div class="banner-slide" style="background-image: url('https://via.placeholder.com/1200x400?text=Vision+Correction');">
+            <div class="banner-content">
+                <h2 data-i18n="banner.title3">Vision Correction Services</h2>
+                <p data-i18n="banner.text3">From LASIK to cataract surgery, we offer the latest vision correction procedures.</p>
+            </div>
+        </div>
+        
+        <div class="banner-nav">
+            <div class="banner-dot active"></div>
+            <div class="banner-dot"></div>
+            <div class="banner-dot"></div>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main class="main-content container">
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="about-content">
+                <h3 data-i18n="about.title">Welcome to Mathabhanga Eye Care Centre</h3>
+                <p data-i18n="about.text1">At Mathabhanga Eye Care, we are committed to providing exceptional eye care services to our patients. With over 15 years of experience, our team of board-certified ophthalmologists and optometrists deliver personalized care using the latest technology.</p>
+                <div class="about-features">
+                    <div class="feature-card">
+                        <i class="fas fa-eye"></i>
+                        <h4 data-i18n="about.feature1">Comprehensive Eye Exams</h4>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-procedures"></i>
+                        <h4 data-i18n="about.feature2">Advanced Surgeries</h4>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-child"></i>
+                        <h4 data-i18n="about.feature3">Pediatric Care</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="vector.jpg" alt="Our Eye Clinic">
+            </div>
+        </section>
+        
+        <!-- Doctor Schedule Section -->
+        <section class="schedule-section" id="schedule">
+            <div class="section-title">
+                <h2 data-i18n="schedule.title">Doctor's Schedule</h2>
+                <p data-i18n="schedule.subtitle">Our doctors' availability throughout the week</p>
+            </div>
+            
+            <div class="schedule-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th data-i18n="schedule.doctor">Doctor</th>
+                            <th data-i18n="schedule.specialization">Specialization</th>
+                            <th data-i18n="schedule.weekdays">Mon-Fri</th>
+                            <th data-i18n="schedule.saturday">Sat</th>
+                            <th data-i18n="schedule.status">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Doctor">Dr. A. Sharma</td>
+                            <td data-label="Specialization" data-i18n="schedule.spec1">Ophthalmologist</td>
+                            <td data-label="Monday - Friday">
+                                <span class="time-slot">9:00 - 5:00</span>
+                            </td>
+                            <td data-label="Saturday">
+                                <span class="time-slot">9:00 - 2:00</span>
+                            </td>
+                            <td data-label="Status">
+                                <span class="status available" data-i18n="schedule.available">Available</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="Doctor">Dr. P. Patel</td>
+                            <td data-label="Specialization" data-i18n="schedule.spec2">Retina Specialist</td>
+                            <td data-label="Monday - Friday">
+                                <span class="time-slot">10:00 - 6:00</span>
+                            </td>
+                            <td data-label="Saturday">
+                                <span class="time-slot">10:00 - 2:00</span>
+                            </td>
+                            <td data-label="Status">
+                                <span class="status available" data-i18n="schedule.available">Available</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="Doctor">Dr. R. Banerjee</td>
+                            <td data-label="Specialization" data-i18n="schedule.spec3">Pediatric Ophthalmologist</td>
+                            <td data-label="Monday - Friday">
+                                <span class="time-slot">9:00 - 4:00</span>
+                            </td>
+                            <td data-label="Saturday">
+                                <span class="time-slot">-</span>
+                            </td>
+                            <td data-label="Status">
+                                <span class="status unavailable" data-i18n="schedule.unavailable">On Leave</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <!-- Doctors Section -->
+        <section class="doctors-section" id="doctors">
+            <div class="section-title">
+                <h2 data-i18n="doctors.title">Our Expert Doctors</h2>
+                <p data-i18n="doctors.subtitle">Meet our team of highly qualified ophthalmologists</p>
+            </div>
+            
+            <div class="doctors-grid">
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="Doctor 1.jpg" alt="Dr. Amit Sharma">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Amit Sharma</h3>
+                        <p class="specialization" data-i18n="doctors.spec1">Ophthalmologist</p>
+                        <p class="education" data-i18n="doctors.edu1">MS (Ophthalmology), AIIMS New Delhi</p>
+                        <p class="experience" data-i18n="doctors.exp1">15+ years experience</p>
+                        <!-- <div class="doctor-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+                
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="Doctor 2.jpg" alt="Dr. Priya Patel">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Priya Patel</h3>
+                        <p class="specialization" data-i18n="doctors.spec2">Retina Specialist</p>
+                        <p class="education" data-i18n="doctors.edu2">MD, DNB (Ophthalmology), LVPEI Hyderabad</p>
+                        <p class="experience" data-i18n="doctors.exp2">12+ years experience</p>
+                        <!-- <div class="doctor-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+                
+                <div class="doctor-card">
+                    <div class="doctor-image">
+                        <img src="Doctor 3.jpg" alt="Dr. Rajiv Banerjee">
+                    </div>
+                    <div class="doctor-info">
+                        <h3>Dr. Rajiv Banerjee</h3>
+                        <p class="specialization" data-i18n="doctors.spec3">Pediatric Ophthalmologist</p>
+                        <p class="education" data-i18n="doctors.edu3">DOMS, Fellowship in Pediatric Ophthalmology</p>
+                        <p class="experience" data-i18n="doctors.exp3">10+ years experience</p>
+                        <!-- <div class="doctor-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section class="services-section" id="services">
+            <div class="section-title">
+                <h2 data-i18n="services.title">Our Services</h2>
+                <p data-i18n="services.subtitle">Comprehensive eye care for all ages</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 data-i18n="services.item1">Comprehensive Eye Exams</h3>
+                    <p data-i18n="services.item1desc">Detailed eye examinations using advanced diagnostic equipment.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-procedures"></i>
+                    </div>
+                    <h3 data-i18n="services.item2">Cataract Surgery</h3>
+                    <p data-i18n="services.item2desc">Phacoemulsification with premium IOL implantation.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-glasses"></i>
+                    </div>
+                    <h3 data-i18n="services.item3">LASIK Vision Correction</h3>
+                    <p data-i18n="services.item3desc">Bladeless LASIK with customized treatment options.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-low-vision"></i>
+                    </div>
+                    <h3 data-i18n="services.item4">Glaucoma Treatment</h3>
+                    <p data-i18n="services.item4desc">Medical and surgical management of glaucoma.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3 data-i18n="services.item5">Pediatric Ophthalmology</h3>
+                    <p data-i18n="services.item5desc">Specialized care for children's eye conditions.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-retweet"></i>
+                    </div>
+                    <h3 data-i18n="services.item6">Retinal Disorders</h3>
+                    <p data-i18n="services.item6desc">Diagnosis and treatment of retinal diseases.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="contact-info">
+                <h3 data-i18n="contact.title">Contact Us</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4 data-i18n="contact.address">Address</h4>
+                            <p data-i18n="contact.addressText">Station Road, Near Mathabhanga Railway Station<br>Mathabhanga, Cooch Behar, West Bengal 736146</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h4 data-i18n="contact.phone">Phone</h4>
+                            <p>+91 98765 43210<br>03582 123 456</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 data-i18n="contact.email">Email</h4>
+                            <p>info@mathabhangaeyecare.com<br>appointments@mathabhangaeyecare.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4 data-i18n="contact.hours">Working Hours</h4>
+                            <p data-i18n="contact.hoursText">Monday - Friday: 9:00 AM - 7:00 PM<br>Saturday: 9:00 AM - 2:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.833947988366!2d89.2123774134366!3d26.339925288961076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e309ad4ad6ba1d%3A0x53b3859a6ec0a7b!2sMathabhanga%20eye%20care%20centre!5e0!3m2!1sen!2sin!4v1748423362188!5m2!1sen!2sin
+" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-col">
+                <h3>Mathabhanga Eye Care</h3>
+                <p data-i18n="footer.about">Providing exceptional eye care services with compassion and cutting-edge technology since 2008.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3 data-i18n="footer.links">Quick Links</h3>
+                <ul>
+                    <li><a href="#home" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#about" data-i18n="nav.about">About Us</a></li>
+                    <li><a href="#services" data-i18n="nav.services">Services</a></li>
+                    <li><a href="#doctors" data-i18n="nav.doctors">Doctors</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 data-i18n="footer.services">Services</h3>
+                <ul>
+                    <li><a href="#" data-i18n="services.item1">Comprehensive Eye Exams</a></li>
+                    <li><a href="#" data-i18n="services.item2">Cataract Surgery</a></li>
+                    <li><a href="#" data-i18n="services.item3">LASIK Vision Correction</a></li>
+                    <li><a href="#" data-i18n="services.item4">Glaucoma Treatment</a></li>
+                    <li><a href="#" data-i18n="services.item5">Pediatric Ophthalmology</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Mathabhanga Eye Care Centre. <span data-i18n="footer.rights">All Rights Reserved.</span></p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+           
