@@ -41,7 +41,8 @@ const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
 const nav = document.querySelector('nav');
 const navLinks = document.querySelectorAll('nav ul li a');
 
-mobileMenuBtn.addEventListener('click', () => {
+mobileMenuBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
     nav.classList.toggle('active');
     mobileMenuBtn.classList.toggle('active');
 });
@@ -56,15 +57,15 @@ navLinks.forEach(link => {
 
 // Close menu when clicking outside
 document.addEventListener('click', (e) => {
-    if (!nav.contains(e.target) && !mobileMenuBtn.contains(e.target) && nav.classList.contains('active')) {
+    if (!nav.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
         nav.classList.remove('active');
         mobileMenuBtn.classList.remove('active');
     }
 });
 
-// Update window resize handler
+// Close menu on resize if it becomes desktop view
 window.addEventListener('resize', () => {
-    if (window.innerWidth > 992) {
+    if (window.innerWidth > 767) {
         nav.classList.remove('active');
         mobileMenuBtn.classList.remove('active');
     }
